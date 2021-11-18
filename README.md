@@ -1,7 +1,7 @@
 # Documentación para el proyecto T2O: Intrucciones de uso
 
 <div>Para poder ejecutar el proyecto, en primer lugar debemos activar el environment, por lo que nos situaremos en t2o/t2o/venv/Scripts y ejecutaremos el comando "activate".</div>
-<div>Una vez activado este environment podremos proceder a iniciar el proyecto en local. Para ello, simplemente deberemos posicionarnos en t2o/t2o/ y ejecutar el comando python "manage.py runserver". Una vez ejecutado este comando podremos consumir la API que genera a través del navegador web.</div>
+<div>Una vez activado este environment podremos proceder a iniciar el proyecto en local. Para ello, simplemente deberemos posicionarnos en t2o/t2o/ y ejecutar el comando python "manage.py runserver". Una vez ejecutado este comando podremos consumir la API que genera.</div>
 <div>En concreto, son tres las llamadas que estan disponibles para su consumo:</div>
 <ol>
   <li>La primera de ellas es 'blockchain/save_orders/"crypto"-"fiat"', donde "crypto" y "fiat" representan la relación entre la criptodivisa y la moneda fiat (e.g. "BTC-USD"). Un ejemplo de esta llamada (suponiendose que se ha iniciado el proyecto en local) sería: 'http://127.0.0.1:8000/blockchain/save_orders/BTC-USD/'. En esta llamada, es posible tanto ver la información sin insertarla (a través del método GET) como insertándola (a través del método PUT). En este último caso, la información será guardada en base de datos para poderse consumir posteriormente.</li>
